@@ -1,9 +1,9 @@
 import React from 'react';
 import "./Sidenav.css";
-import HomeIcon from "@mui/icons-material/Home";
+import * as MdIcons from 'react-icons/md';
 import * as CgIcons from 'react-icons/cg';
 import * as FaIcons from 'react-icons/fa';
-import SearchIcon from "@mui/icons-material/Search";
+import * as FiIcons from 'react-icons/fi';
 import ExploreIcon from "@mui/icons-material/Explore";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -28,49 +28,49 @@ function Sidenav() {
         <div className='sidenav-buttons'>
 
             <button className='side-button'>
-                <HomeIcon/>
-                <span>Home</span>
+                <MdIcons.MdHomeFilled size="1.75rem" color='white'/>
+                <span><b>Home</b></span>
             </button>
 
             <button className='side-button'>
-                <SearchIcon/>
+                <FiIcons.FiSearch size="1.55rem"/>
                 <span>Search</span>
             </button>
 
             <button className='side-button'>
-                <ExploreIcon/>
+                <ExploreIcon sx={{fontSize: 25}}/>
                 <span>Explore</span>
             </button>
 
             <button className='side-button'>
-                <CgIcons.CgClapperBoard/>
+                <CgIcons.CgClapperBoard size="1.55rem"/>
                 <span>Reels</span>
             </button>
 
             <button className='side-button'>
-                <FaIcons.FaFacebookMessenger/>
+                <FaIcons.FaFacebookMessenger size="1.55rem"/>
                 <span>Messages</span>
             </button>
 
             <button className='side-button'>
-                <FavoriteBorderIcon/>
+                <FavoriteBorderIcon sx={{fontSize: 25}} />
                 <span>Notifications</span>
             </button>
 
             <button className='side-button'>
-                <CgIcons.CgAddR/>
+                <CgIcons.CgAddR size="1.55rem"/>
                 <span>Create</span>
             </button>
 
             <button className='side-button'>
-                <Avatar/>
-                <span>Profile</span>
+                <Avatar sx={{width: 26, height: 26, paddingLeft: 0, paddingRight:0}}>A</Avatar>
+                <span sx={{marginLeft: 1}}>Profile</span>
             </button>
         </div>
 
         <div className='side-more'>
             <button className='side-button'>
-                <MenuIcon/>
+                <MenuIcon sx={{fontSize: 25}}/>
                 <span>More</span>
             </button>
         </div>
